@@ -6,12 +6,18 @@
     android:layout_height="match_parent"
     tools:context="com.mdrahorat4563.myfirebasechat.ChatActivity">
 
+    <ListView
+        android:id="@+id/message_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     <EditText
         android:id="@+id/message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_your_message"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btn_send"
+        android:hint="@string/enter_your_message" />
 
     <ImageButton
         android:id="@+id/btn_send"
